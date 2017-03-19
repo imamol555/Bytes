@@ -1,0 +1,95 @@
+/**************header style **********/
+#head{
+	display: block;
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	border: 1px solid ;
+	background-color:  #050515;
+}
+/*----------------logo--------*/
+
+#logo{
+
+	display: block;
+	width: 250px;
+	height: 80px;
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	background-image: url("images/bytes_logo.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+
+	
+}
+
+/*----------------------------NAVIGATION ---------------------*/
+nav {
+	display: block;
+	position: absolute;
+	right: 200px;
+	top: 10px;
+	
+}
+nav .navigation{
+	display: inline-block;
+	height: 40px;
+	width: 80px;
+	margin: 10px;
+	padding:10px ;
+
+	background-color:#00BFFF;
+	border-radius: 20px; 
+	/*border: 1px solid cyan;*/
+	font-family: sans-serif;
+	text-align: center;
+
+}
+nav .navigation a{
+	position: relative;
+	top: 10px;
+	color: #050515;
+	text-decoration: none;
+	font-weight: 8;
+
+}
+nav .navigation:hover {
+	/*background-color: #5932cd*/;
+	    background-color: transparent;
+	    border: 2px solid #9932cc;
+
+}
+nav .navigation:hover a {
+	/*background-color: #5932cd*/;
+	    color:orange;
+
+}
+nav .navigation a:hover{
+	color: #9932cc;
+}
+
+
+/***---------------search bar------*/
+
+input[type='text']{
+
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	width: 150px;
+	height: 40px;
+	box-sizing: border-box;
+	background-color:#00BFFF; 
+	border-color:#050515; 
+	border-radius: 7px;
+	color: #050515;
+	font-size: 20px;
+	padding: 5px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#050515;
+  font-size: 20px;
+}

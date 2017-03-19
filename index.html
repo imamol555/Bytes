@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="quantum-style.css">
+	<link rel="stylesheet" type="text/css" href="social.css">
+	
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="footer-style.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body >
+	
+	
+	<section id="mysection">
+		
+		<div id="click">
+			<a href="quantum.html">View Magazine</a>
+		</div>
+	</section>
+
+	<aside >
+		
+			<div id="social">
+		
+			<div>
+			<a href="http://www.facebook.com">
+				<img src="images/fb.png" height="60px" width="60px" alt="facebook">
+			</a>
+		</div>
+		<div>
+			<a href="http://www.twitter.com">
+				<img src="images/twitter3.png" height="60px" width="60px" alt="twitter">
+			</a>
+		</div>
+		<div>
+			<a href="http://www.linkedin.com">
+				<img src="images/index.png" height="60px" width="60px" alt="linked-in">
+			</a>
+		</div>
+		<div>
+			<a href="http://www.google.com">
+				<img src="images/index.jpg" height="60px" width="60px" alt="google+">
+			</a>
+	
+		</div>
+
+		</div>
+		
+		
+
+	</aside>
+	<aside id="my_aside">
+		<div id="aside_one" class="aside_blocks">
+			
+			<form id="login">
+				<input type="text" name="l_uname" placeholder="Enter Username">
+				<input type="password" name="l_password" placeholder="Enter Password">
+				<input type="Submit" name="submit" value="Log in">
+
+			</form>
+			<form id="signup">
+				<input type="text" name="s_uname" placeholder="Enter Username">
+				<input id="pone" type="password" name="s_password1" placeholder="Enter Password"><br><br>
+				<input id="ptwo" type="password" name="s_password2" placeholder="re-enter Password">
+				<input type="Submit" name="submit" value="Sign Up">
+
+			</form>
+			
+		</div>
+		<div id="aside_two" class="aside_blocks">
+			
+			
+			
+			
+		</div>
+		
+			
+		
+
+	</aside>
+	<footer id="footer_block">
+		 <div id="about_us_block" class="inside_footer_blocks">
+		 	<h3>About Us</h3>
+		 	<p>Amol Patil </p>
+		 	<p>Yadnesh Choudhary</p>
+		 	<p>Akshay Lamkhade</p>
+
+		 </div>
+		
+		<a href="">
+			<div id="scroll_up" >
+		 		
+		 	</div>
+		 </a>
+		 <div id="contacts_block" class="inside_footer_blocks">
+		 	<h3>Contact Us</h3>
+		 	<p>E-mail: patil555amol@gmail.com</p>
+		 	<p>E-mail: yadnesh219@gmail.com</p>
+		 	<p>E-mail: akshaygeek@gmail.com</p>
+		 </div>
+		 
+		 
+	</footer>
+	<header id='head'  >
+		<div class="change">
+			<div id="logo">
+				
+
+			</div>
+			<nav >
+				
+				<div class="navigation">
+					<a href="index.html">
+					<b>HOME</b>
+					</a>
+				</div>
+				<div class="navigation">
+					<a href="quantum.html">
+						<b>GEEK</b>
+					</a>
+				</div>
+				<div class="navigation">
+					<a href="android_n.html"><b> TRENDING</b></a>
+			
+				</div>
+				<div class="navigation">
+					<a href="hack.html"><b>SECURITY</b></a>
+				</div>
+				<div class="navigation">
+					<a href="rf.html"><b>SCIENCE</b></a>
+				</div>
+				
+				
+				
+			</nav>
+			<input id="search" type="text"  placeholder="Search">
+		</div>	
+		</header>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+			$(document).ready(function(){
+
+    		$(window).on("scroll",function(){
+
+        	if($(document).scrollTop() > 150){
+            $("#head").css({display:"block",position:"fixed",height:60});
+            $(".navigation").css(
+            					{	
+									height: 20,
+									padding:4 ,
+									margin:7,
+									'border-radius': 5, 
+								});
+            $(".navigation a").css( {top:3});
+            $("#logo").css({width: 180,height: 40});
+            $('#search').css({top: 15,height:30,'border-radius': 4 });
+            						
+
+      		}
+
+
+        else{
+
+        	$("#head").css({display:"block",position:"absolute",height:100});
+            $(".navigation").css(
+            					{	
+									height: 40,
+									padding:10 ,
+									margin:10,
+									'border-radius': 20, 
+								});
+            $(".navigation a").css( {top:10});
+            $("#logo").css({width: 250,height: 80});
+            $('#search').css({top: 30,height:40,'border-radius': 7 });
+            						
+        }
+            
+
+
+    	})
+
+		})
+			
+
+
+
+
+		
+		
+	</script>
+</body>
+</html>

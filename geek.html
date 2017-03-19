@@ -1,0 +1,134 @@
+<html>
+<head>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="geek-style.css">
+
+</head>
+<body>
+	
+	
+	
+	<script type="text/javascript">
+
+		//var n = document.getElementsByClassName("navigation");
+		$(document).ready(
+			function() {
+
+  			$(window).scroll(
+  				function () {
+      				//if you hard code, then use console
+      				//.log to determine when you want the 
+      				//nav bar teo stick.  
+      				console.log($(window).scrollTop())
+    				if ($(window).scrollTop() > 280) {
+      					$('#nav-bar').addClass('navbar-fixed');
+   	 					}
+    				if ($(window).scrollTop() < 281) {
+      					$('#nav-bar').removeClass('navbar-fixed');
+   					 	}
+  					}
+  				);
+				
+			}
+		
+		);
+
+		</script>
+
+	<section>
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			
+			function plusDivs(n) {
+  				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+ 			 	var i;
+  				var x = document.getElementsByClassName("mySlides");
+  				var a = document.getElementsByClassName("one");
+  				
+  				if (n < 1) {slideIndex = x.length}
+ 				 for (i = 0; i < x.length; i++) {
+   					  
+   					  x[i].style.display = "none";
+   					  a[i].style.display = "none";
+
+
+   					    }
+   				if(slideIndex>4){slideIndex=1}	    					
+  				x[slideIndex-1].style.display = "block"; 
+  				a[slideIndex-1].style.display = "block";
+  					
+  				 
+				}
+		</script>
+		<div id="mysection">
+			<div id="slides">
+				
+				
+			</div>
+			
+
+			<div id="ss-first"><a class="w3-btn-floating"  onclick="plusDivs(-1)"><pre><</pre></a></div>
+			<div id="ss-second"><a class="w3-btn-floating"  onclick="plusDivs(1)"><pre>></pre></a></div>
+
+
+			<div id="slideshow-base">
+			
+				<div class="one" style="display:block;">
+					<a href="dns.html">
+						<h1>What is DNS ?</h1>	
+					</a>	
+					<div class="subone"></div>
+				</div>
+
+				<div class="one">
+					<a href="linux.html"><h1>Getting started with Linux !!!</h1></a>
+					<div class="subone"></div>
+				</div>
+
+				<div class="one">
+					<a href="http2.html"><h1 >What is HTTP2 ?</h1></a>
+					<div class="subone"></div>
+				</div>
+
+				<div class="one">
+					<a href="vpn.html"><h1>What is VPN ? How it works ?</h1></a>
+					<div class="subone"></div>
+				</div>
+			
+			
+			
+
+		</div>       
+		<div id="sub-one">
+			<p>this is my sub one</p>
+			
+		</div>
+		<div id="sub-two">
+			<p>this is my sub two</p>
+			
+		</div>
+		<div id="sub-three">
+			<p>this is my sub three</p>
+			
+		</div>
+		<div id="sub-four">
+			<p>this is my sub four</p>
+			
+		</div>
+		<div id="sub-five">
+			<p>this is my sub five</p>
+			
+		</div>
+		
+		</div>
+
+		
+
+	</section>
+	
+</body>
+</html>

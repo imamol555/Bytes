@@ -1,0 +1,147 @@
+/*-------article block------------*/
+#mysection{
+	 background-color: #ffffff;
+
+	display: block;
+	position: absolute;
+	width: 900px;
+	height: 1900px;
+	top:100px;
+	left: 70px;
+	margin: 30px;
+	border: 2px solid grey;
+	  box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+
+}
+
+/*----------------------left side bar-------------*/
+
+
+#sub-one{
+
+	position: absolute;
+	width: 760px;
+	height: 300px;
+	border: 1px solid green;
+	top: 820px;
+	left:240px;
+	 	
+	padding-top:20px; 
+
+}
+#sub-two{
+
+	position: absolute;
+	width: 330px;
+	height: 350px;
+	border: 1px solid cyan;
+	top: 1150px;
+	left: 240px;
+	margin-top: 10px;
+	padding: 20px;
+}
+#sub-three{
+
+	position: absolute;
+	width: 330px;
+	height: 350px;
+	border: 1px solid cyan;
+	top: 1150px;
+	left: 630px;
+	margin-top: 10px;
+	padding: 20px;
+}
+#sub-four{
+
+	position: absolute;
+	width: 330px;
+	height: 350px;
+	border: 1px solid violet;
+	top: 1550px;
+	left: 240px;
+	margin-top: 20px;
+	padding: 20px;
+}
+#sub-five{
+
+	position: absolute;
+	width: 330px;
+	height: 350px;
+	border: 1px solid violet;
+	top: 1550px;
+	left: 630px;
+	margin-top: 20px;
+	padding: 20px;
+}
+/*************************************content************************************/
+/*--------------slideshow-----------*/
+#slides{
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 70px;
+
+width: 760px;
+	height: 380;
+	border: 2px solid grey;
+
+}
+.mySlides{
+	display: none;
+	width: 760px;
+	height: 380;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.w3-btn-floating{
+
+	font-size: 50px;
+	font-weight: bolder;
+	color: #00CED1;
+	
+
+}
+.w3-btn-floating:hover{
+	font-size: 50px;
+	font-weight: bolder;
+	color: red;
+	cursor: pointer;
+
+}
+/* -----------pre-next arrow buttons-------*/
+#ss-first{
+
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	
+}
+#ss-second{
+
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+}
+/*----------slideshow base block--------*/
+#slideshow-base{
+
+	position: absolute;
+	width: 760px;
+	height: 200px;
+	top: 600px;
+	left: 240px;
+	border: 1px solid red;
+}
+/*-----------heading of slides--------------*/
+.one h1{
+	
+	display: none;
+	font: bold 50px helvetica;
+	color:  	#191970;
+	text-align: center;
+
+}
+/*timepass*/
